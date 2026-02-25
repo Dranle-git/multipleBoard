@@ -1,22 +1,43 @@
-const form = document.getElementById("numbers");
 
-form.addEventListener("submit", function (event) {
-    event.preventDefault();
+function addEventListener() {
+
 
     let myFirstArray = [];
 
-    for (let i = 1; i <= 10; i++) {
-        let value = document.getElementById(`input${i}`).value;
-        myFirstArray.push(Number(value));
-    }
-
-    const result = document.getElementById("result");
-    result.value = "";
-
-    for (let i = 0; i < 10; i++) {
-        for (let j = 1; j <= 10; j++) {
-            result.value += myFirstArray[i] * j + "\t";
+    for (let i = 0; i < 10; i++) 
+        {
+            var Value = document.getElementById("input" + i).value;
+        
+        if (Value === 0) {
+        
+            myFirstArray.push(0);}
+          else{
+            myFirstArray.push(Number(Value));
+            
         }
-        result.value += "\n";
+           
+        } 
+        // מייצרים טבלה 
+        // שורת כותרת עליונה
+        //הוספת המספרים לשורת הכותרת העליונה 
+        //ניקוי שדות בטבלה +++
+        //יצירת שורות בטבלה 
+       // הצגת הטבלה בדף
+        //לולאות הכפל
+
     }
-});
+/*
+    const result = document.getElementById("result");
+    result.value = ""; 
+
+  
+    for (let i = 0; i < myFirstArray.length; i++)
+        {
+        let row = "";
+        for (let j = 0; j < 10; j++) {
+
+            row += (myFirstArray[i] * j) + "\t"; 
+        }
+        result.value += row + "\n"; 
+        }
+*/  

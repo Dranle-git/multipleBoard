@@ -1,12 +1,13 @@
 body
 {
-    background-color: #000000;
+    background-color: #f83d3d;
 }
 
 .box
 {
     position: fixed;
-    bottom: 5%;
+    bottom: 1%;
     width:  100%;
     height: 30%;
+left: 5px;
 }
